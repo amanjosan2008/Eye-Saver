@@ -3,7 +3,7 @@
 # Also it will copy the script to home directory
 
 
-mv eye-saver.py ~
+mkdir ~/scripts && mv eye-saver.py ~/scripts
 echo "*/20 * * * * /usr/bin/python3 ~/scripts/eyesaver.sh" | sudo tee --append /etc/cron.d/eyesaver > /dev/null
 crontab /etc/cron.d/eyesaver 
 
