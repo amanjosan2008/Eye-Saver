@@ -1,6 +1,7 @@
 # This script will install a Crontab entry to 
 # execute eyesaver warning every 20 minutes
 
-echo "*/05 * * * * aman bash /opt/eyesaver.sh" > /etc/cron.d/eye-saver
+echo "*/20 * * * * /usr/bin/python ~/eyesaver.sh" | sudo tee --append /etc/cron.d/eyesaver > /dev/null
+mv eye-saver.py ~
 
 
