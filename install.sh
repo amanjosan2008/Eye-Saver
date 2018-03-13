@@ -4,7 +4,7 @@
 
 
 mv eye-saver.py ~
-echo "*/20 * * * * /usr/bin/python3 ~/eyesaver.sh" | sudo tee --append /etc/cron.d/eyesaver > /dev/null
+echo "*/20 * * * * /usr/bin/python3 ~/scripts/eyesaver.sh" | sudo tee --append /etc/cron.d/eyesaver > /dev/null
 crontab /etc/cron.d/eyesaver 
 
 
