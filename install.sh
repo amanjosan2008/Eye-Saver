@@ -4,7 +4,7 @@
 
 
 mkdir ~/scripts && mv eye-saver.py ~/scripts
-echo "*/20 * * * * /usr/bin/python3 ~/scripts/eyesaver.sh" | sudo tee --append /etc/cron.d/eyesaver > /dev/null
+echo "*/20 * * * * /usr/bin/python3 ~/scripts/eye-saver.py" | sudo tee --append /etc/cron.d/eyesaver > /dev/null
 crontab /etc/cron.d/eyesaver 
 
 
