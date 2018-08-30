@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
-from tkinter import *
+try:
+    from tkinter import *
+except:
+    from Tkinter import *
 import sys
 #import webbrowser
 #import random
